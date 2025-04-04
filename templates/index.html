@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="overflow-x: hidden;">
+    <div id="deposit-window"></div>
+
+    <div class="content" id="content">
+        <h1 id="balance">3452.9 <a class="starbig" style="top: 1px; position: relative;"></a></h1>
+
+        <center>
+        <div class="income">
+            <span>1450 <a class="star" style="top: 1px; opacity: 1;"></a>/ hour</span>
+        </div>
+        </center>
+
+        <div class="buttons">
+            <button>- Withdraw</button>
+            <button id="deposit" onclick="deposit()">+ Deposit</button>
+        </div>
+
+        <h2 class="inventory">Inventory</h2>
+        <h2 class='inventory right'>+ Open</h2>
+        <div class="invent-list">
+            <div>
+                <img src="static/images/pepe_4.gif"><br>
+                <center>
+                    <span>7 days</span>
+                </center>
+            </div>
+            
+            <div>
+                <img src="static/images/cap_10.gif"><br>
+                <center>
+                    <span>8 days</span>
+                </center>
+            </div>
+            <div>
+                <img src="static/images/peach_16.gif"><br>
+                <center>
+                    <span>12 days</span>
+                </center>      
+            </div>
+            
+        </div>
+    </div>
+
+    <nav>
+        <div></div>
+        <div onclick="location.href = '/store'" class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-store h-6 w-6"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path><path d="M2 7h20"></path><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"></path></svg></div>
+        <div></div>
+    </nav>
+
+    <script src="static/script/Windows.js"></script>
+    <script src="static/script/Time.js"></script>
+    <script src="static/script/Game.js"></script>
+    <script src="static/script/Images.js"></script>
+</body>
+</html>

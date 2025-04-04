@@ -1,0 +1,19 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def page():
+    return render_template('index.html')
+
+@app.route('/store')
+def store():
+    return render_template('store.html')
+
+@app.route('/case')
+def case():
+    return render_template('case.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
