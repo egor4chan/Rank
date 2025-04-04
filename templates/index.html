@@ -13,7 +13,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body style="overflow-x: hidden;">
-    <div id="deposit-window"></div>
+    <div id="deposit-window">
+        <h4 class="desc">Choose the method you want to top up. You can pay in TON or in Telegram Stars.</h4>
+        <div class="chooser">
+            <div onclick="choose_system('stars')" id="starsmethod" class="method" style="opacity:1;">
+                <a class="star" style="opacity: 1;"></a>
+            </div>
+            <div onclick="choose_system('ton')" id="tonmethod" class="method"  style="opacity: 0.5;">
+                <img class="ton">
+            </div>
+            <div onclick="choose_value(100)" id="v100">
+                <span>100</span>
+                <a class="star"></a>
+            </div>
+            <div onclick="choose_value(250)" id="v250">
+                <span>250</span>
+                <a class="star"></a>
+            </div>
+            <div onclick="choose_value(500)" id="v500">
+                <span>500</span>
+                <a class="star"></a>
+            </div>
+            <div onclick="choose_value(1000)" id="v1000">
+                <span>1000</span>
+                <a class="star"></a>
+            </div>
+            <div onclick="choose_value(2500)" id="v2500">
+                <span>2500</span>
+                <a class="star"></a>
+            </div>
+            <div onclick="choose_value(5000)" id="v5000">
+                <span>5000</span>
+                <a class="star"></a>
+            </div>
+            <div onclick="choose_value(7500)" id="v7500">
+                <span>7500</span>
+                <a class="star"></a>
+            </div>
+            <div onclick="choose_value(10000)" id="v10000">
+                <span>10000</span>
+                <a class="star"></a>
+            </div>
+
+            <button id="final-deposit">Deposit - <a id="final-deposit-value"></a> <a class="star" style="left: 6px;"></a></button>
+        </div>
+    </div>
+    
 
     <div class="content" id="content">
         <h1 id="balance">3452.9 <a class="starbig" style="top: 1px; position: relative;"></a></h1>
@@ -25,12 +70,12 @@
         </center>
 
         <div class="buttons">
-            <button>- Withdraw</button>
-            <button id="deposit" onclick="deposit()">+ Deposit</button>
+            <button><img src="static/images/icons/withdraw.png">Withdraw</button>
+            <button id="deposit" onclick="deposit()"><img src="static/images/icons/add.png"> Deposit</button>
         </div>
 
         <h2 class="inventory">Inventory</h2>
-        <h2 class='inventory right'>+ Open</h2>
+        <h2 class='inventory right'>Open</h2>
         <div class="invent-list">
             <div>
                 <img src="static/images/pepe_4.gif"><br>
@@ -56,11 +101,21 @@
     </div>
 
     <nav>
-        <div></div>
-        <div onclick="location.href = '/store'" class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-store h-6 w-6"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path><path d="M2 7h20"></path><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"></path></svg></div>
-        <div></div>
+        <div onclick="locate('/')">
+            <img src="static/images/icons/add.png" alt="">
+        </div>
+        <div onclick="locate('/store')">
+            <img src="static/images/icons/shop.png" alt="">
+        </div>
+        <div onclick="locate('/frens')">
+            <img src="static/images/icons/frens.png" alt="">
+        </div>
+        <div onclick="locate('/top')">
+            <img src="static/images/icons/top.png" alt="">
+        </div>
     </nav>
 
+    <script src="static/script/Locate.js"></script>
     <script src="static/script/Windows.js"></script>
     <script src="static/script/Time.js"></script>
     <script src="static/script/Game.js"></script>

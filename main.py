@@ -14,6 +14,14 @@ def store():
 def case():
     return render_template('case.html')
 
+@app.route('/frens')
+def frens():
+    return render_template('frens.html')
+
+@app.route('/top')
+def top():
+    return render_template('top.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
