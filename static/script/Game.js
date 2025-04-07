@@ -10,14 +10,14 @@ function open_position(name) {
     window.style.bottom = '0px'
     window.style.opacity = 1
 
-    document.getElementById('pic').setAttribute('src', `static/images/pepe_${name-1}.gif`)
+    document.getElementById('pic').setAttribute('src', `static/images/gifs-low/pepe_${name-1}-min.gif`)
 
     if (name > 8) {
-        document.getElementById('pic').setAttribute('src', `static/images/cap_${name-1}.gif`)
+        document.getElementById('pic').setAttribute('src', `static/images/gifs-low/cap_${name-1}-min.gif`)
     }
 
     if (name > 14) {
-        document.getElementById('pic').setAttribute('src', `static/images/peach_${name-1}.gif`)
+        document.getElementById('pic').setAttribute('src', `static/images/gifs-low/peach_${name-1}-min.gif`)
     }
 }
 
