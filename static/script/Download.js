@@ -7,23 +7,9 @@ function download(file_name) {
     }
 }
 
-download('pepe_0')
-download('pepe_1')
-download('pepe_2')
-download('pepe_3')
-download('pepe_4')
-download('pepe_5')
-download('pepe_6')
-download('pepe_7')
+gifts = ['pepe_0', 'pepe_1', 'pepe_2', 'pepe_3', 'pepe_4', 'pepe_5', 'pepe_6', 'pepe_7', 'cap_8', 'cap_9', 'cap_10', 'cap_11', 'cap_12', 'cap_13', 'peach_14', 'peach_15', 'peach_16', 'peach_17']
 
-download('cap_8')
-download('cap_9')
-download('cap_10')
-download('cap_11')
-download('cap_12')
-download('cap_13')
-
-download('peach_14')
-download('peach_15')
-download('peach_16')
-download('peach_17')
+for (let i=0; i < gifts.length; i++) {
+    let id = gifts[i]
+    download(id)
+}
