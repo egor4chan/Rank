@@ -1,9 +1,10 @@
-async function download(file_name) {
+function download(file_name) {
     var gif = document.createElement('img')
     gif.setAttribute('src', `static/images/gifs/${file_name}.gif`)
 
-    gif.onload = async function() {
+    gif.onload = function() {
         document.getElementById(`${file_name}`).setAttribute('src', `static/images/gifs/${file_name}.gif`)
+        alert(file_name)
     }
 }
 
