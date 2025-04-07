@@ -68,7 +68,7 @@ h1 {
     left: 5%;
     width: 90%;
     height: calc(100vh - 100px);
-    top: 100px;
+    top: 200px;
     transition: 1s;
 }
 
