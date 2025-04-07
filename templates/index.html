@@ -12,7 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body style="overflow-x: hidden;">
+<body style="overflow-x: none;">
+    <div id="notify-window">
+        <h2><img src="static/images/icons/add.png" style="width: 25px; position: relative; top: 4px; padding-right: 5px;"> New Item!</h2>
+        <img src="static/images/hypno_18.gif" alt="">
+        <h5>You can claim this Item free. It's your award for joining per refferal link.</h5>
+        <button onclick="close_window()">Claim</button>
+    </div>
+
     <div id="deposit-window">
         <h4 class="desc">Choose the method you want to top up. You can pay in TON or in Telegram Stars.</h4>
         <div class="chooser">
@@ -78,9 +85,9 @@
         <h2 class='inventory right'>Open</h2>
         <div class="invent-list">
             <div>
-                <img src="static/images/pepe_4.gif"><br>
+                <img src="static/images/hypno_18.gif"><br>
                 <center>
-                    <span>7 days</span>
+                    <span>21 days</span>
                 </center>
             </div>
             
@@ -115,6 +122,9 @@
         </div>
     </nav>
 
+
+    <script src="static/script/TON.js"></script>
+    <script src="static/script/Notify.js"></script>
     <script src="static/script/Locate.js"></script>
     <script src="static/script/Windows.js"></script>
     <script src="static/script/Time.js"></script>
